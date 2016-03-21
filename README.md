@@ -8,8 +8,8 @@ The Web API code has been provided for you so you do not need to modify them (un
   1. **api**
     1. Go to the `api` folder
     1. Run `npm install` to install the required modules
-  1. **presidentsapp**
-    1. Go to the `presidentsapp` folder
+  1. **lightsaberapp**
+    1. Go to the `lightsaberapp` folder
     1. Run `bower install --save`
 
 ## How to run
