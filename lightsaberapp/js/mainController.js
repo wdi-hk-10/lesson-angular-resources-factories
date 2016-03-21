@@ -49,6 +49,6 @@ lightsaberApp.controller("MainController", ['$scope', '$resource', function($sco
 
   // Fill the form to edit a Character
   $scope.editCharacter = function(character){
-    self.character = character;
+    $scope.character = character;
   }
 }]);
