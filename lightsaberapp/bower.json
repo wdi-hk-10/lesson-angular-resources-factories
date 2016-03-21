@@ -1,0 +1,25 @@
+{
+  "name": "lightsaberapp",
+  "homepage": "https://github.com/wdi-hk-10/lesson-angular-resources-factories",
+  "authors": [
+    "Willie Tong <tongsinyin@gmail.com>"
+  ],
+  "description": "",
+  "main": "",
+  "moduleType": [
+    "node"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "^1.5.2",
+    "angular-resource": "^1.5.2"
+  }
+}
