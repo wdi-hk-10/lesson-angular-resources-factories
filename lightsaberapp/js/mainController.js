@@ -10,7 +10,7 @@ lightsaberApp.controller("MainController", ['$scope', 'Character',
   
     // Fetch the clicked todo
     $scope.selectCharacter = function(character) {
-      self.selectedCharacter = Character.get({id: character._id});
+      $scope.selectedCharacter = Character.get({id: character._id});
     };
   
     // Save as a Constructor
@@ -45,7 +45,7 @@ lightsaberApp.controller("MainController", ['$scope', 'Character',
   
     // Fill the form to edit a Character
     $scope.editCharacter = function(character){
-      self.character = character;
+      $scope.character = character;
     }
   }
 ]);
