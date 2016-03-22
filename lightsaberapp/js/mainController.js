@@ -1,14 +1,17 @@
 var lightsaberApp = angular.module("LightsaberApp");
 
-lightsaberApp.controller("MainController", ['$scope', 'Character', 
-  function($scope, Character) {
+lightsaberApp.controller("MainController", ['$scope', 'Character', 'Episode',  
+  function($scope, Character, Episode) {
     // Blank new character for form
     $scope.character = {};
   
-    // Fetch all todos
+    // Fetch all characters
     $scope.characters = Character.query();
+
+    // Fetch all episodes
+    $scope.episodes = Episode.query();
   
-    // Fetch the clicked todo
+    // Fetch the clicked character
     $scope.selectCharacter = function(character) {
       $scope.selectedCharacter = Character.get({id: character._id});
     };

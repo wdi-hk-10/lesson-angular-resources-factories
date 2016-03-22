@@ -7,6 +7,7 @@
   <script type="text/javascript" src="js/app.js"></script>
   <script type="text/javascript" src="js/mainController.js"></script>
   <script type="text/javascript" src="./js/resources/character.js"></script>
+  <script type="text/javascript" src="./js/resources/episode.js"></script>
   <link rel="stylesheet" type="text/css" href="./css/style.css">
 </head>
 <body>
@@ -26,6 +27,14 @@
     <ul>
       <li ng-repeat="character in characters" ng-click="selectCharacter(character)">
         {{ character.name }}'s lightsaber is <span class="{{ character.lightsaber | lowercase }}">{{ character.lightsaber }}</span> <a href="#" ng-click="editCharacter(character)">Edit</a> <button ng-click="deleteCharacter(character)">Delete</button>
+      </li>
+    </ul>
+
+    <h1>All Star Wars Episodes</h1>
+    <blockquote>"A long time ago, in a galaxy far far away..."</blockquote>
+    <ul>
+      <li ng-repeat="episode in episodes">
+        <b>{{ episode.name }}</b> is directed by <i>{{ episode.director }}</i> and was released on {{ episode.release_date }}.
       </li>
     </ul>
   </main>
