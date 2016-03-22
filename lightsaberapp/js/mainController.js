@@ -25,7 +25,7 @@ lightsaberApp.controller("MainController", ['$scope', 'Character', 'Episode',
     //   });
     // };
   
-    // Create/Update a Character (Class Method)
+    // Create/Update a Character
     $scope.addCharacter = function() {
       if ($scope.character._id) {
         Character.update($scope.character, function(){
