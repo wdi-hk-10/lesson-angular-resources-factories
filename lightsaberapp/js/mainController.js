@@ -5,10 +5,10 @@ lightsaberApp.controller("MainController", ['$scope', 'Character',
     // Blank new character for form
     $scope.character = {};
   
-    // Fetch all todos
+    // Fetch all characters
     $scope.characters = Character.query();
   
-    // Fetch the clicked todo
+    // Fetch the clicked character
     $scope.selectCharacter = function(character) {
       $scope.selectedCharacter = Character.get({id: character._id});
     };
@@ -22,7 +22,7 @@ lightsaberApp.controller("MainController", ['$scope', 'Character',
     //   });
     // };
   
-    // Create/Update a Character (Class Method)
+    // Create/Update a Character
     $scope.addCharacter = function() {
       if ($scope.character._id) {
         Character.update($scope.character, function(){
