@@ -9,10 +9,10 @@ lightsaberApp.controller("MainController", ['$scope', '$resource', function($sco
     'update': { method:'PUT' }
   });
 
-  // Fetch all todos
+  // Fetch all characters
   $scope.characters = Character.query();
 
-  // Fetch the clicked todo
+  // Fetch the clicked character
   $scope.selectCharacter = function(character) {
     $scope.selectedCharacter = Character.get({id: character._id});
   };
@@ -26,7 +26,7 @@ lightsaberApp.controller("MainController", ['$scope', '$resource', function($sco
   //   });
   // };
 
-  // Create/Update a Character (Class Method)
+  // Create/Update a Character
   $scope.addCharacter = function() {
     if ($scope.character._id) {
       Character.update($scope.character, function(){
